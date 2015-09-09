@@ -32,13 +32,16 @@ ApplicationWindow {
             }
         }
     }
-    ListView {
+    ScrollView {
         id: lv
         x:10; y:10;
         width: 150
         height: 400
-        model: modcpp
-        delegate: del
+
+        ListView {
+            model: modcpp
+            delegate: del
+        }
     }
 
     PropertyFrame {
